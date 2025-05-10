@@ -1,4 +1,6 @@
-sl-dialog::part(title){
-    font-weight: bold;
-    color: $cu-heading-txt-color;
+@use 'vars';
+
+sl-dialog::part(title) {
+  font-weight: bold;
+  color: vars.$cu-heading-txt-color;
 }

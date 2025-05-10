@@ -1,3 +1,5 @@
+@use 'vars';
+
 * {
   box-sizing: border-box;
   margin: 5px 0px;
@@ -5,13 +7,13 @@
 
 body {
   font-family: sans-serif;
-  color: $cu-base-txt-color;
-  font-size: $cu-base-font-size;
+  color: vars.$cu-base-txt-color;
+  font-size: vars.$cu-base-font-size;
   margin: 10px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: $cu-heading-txt-color;
+  color: vars.$cu-heading-txt-color;
 }
 
 .generic-card {
@@ -23,8 +25,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .post-entry {
-    @extend .generic-card;
-    h2 {
-        margin-top: 0;
-    }
+  @extend .generic-card;
+  
+  h2 {
+    margin-top: 0;
+  }
 }
