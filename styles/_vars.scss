@@ -1,0 +1,21 @@
+$cu-color-primary: rgb(9, 140, 110);
+
+$cu-base-txt-color: #444;
+$cu-heading-txt-color: #000;
+
+$cu-base-font-size: 16px;
+
+:root {
+    // full list - https://github.com/shoelace-style/shoelace/blob/current/src/styles/base.scss 
+    --sl-color-primary-50: #{lighten($cu-color-primary, 50%)}; 
+    --sl-color-primary-100: #{lighten($cu-color-primary, 40%)}; 
+    --sl-color-primary-200: #{lighten($cu-color-primary, 30%)}; 
+    --sl-color-primary-300: #{lighten($cu-color-primary, 20%)}; 
+    --sl-color-primary-400: #{lighten($cu-color-primary, 10%)}; 
+    --sl-color-primary-500: #{$cu-color-primary};
+    --sl-color-primary-600: #{darken($cu-color-primary, 5%)}; 
+    --sl-color-primary-700: #{darken($cu-color-primary, 10%)}; 
+    --sl-color-primary-800: #{darken($cu-color-primary, 15%)}; 
+    --sl-color-primary-900: #{darken($cu-color-primary, 20%)}; 
+    --sl-focus-ring-color-primary: rgba(0, 0, 0, 0.1);
+}
